@@ -2,4 +2,4 @@
 
 You can visit this page at: [wojciechrak.com](http://www.wojciechrak.com)
 
-Source code: [github.com/wojtek-rak/MySite](https://github.com/wojtek-rak/MySite)
+Repo: [github.com/wojtek-rak/MySite](https://github.com/wojtek-rak/MySite)
