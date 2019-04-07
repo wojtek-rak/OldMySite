@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-</head>
+<link rel="stylesheet" href="styles.55d3934917381a5c3948.css"></head>
 <body>
   <app-root></app-root>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,6 +23,18 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-133167464-1');
+    
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
   </script>
-<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.e3dbd1c3e6a433ff4bc0.js"></script><script type="text/javascript" src="scripts.11ed0f323964cc7333f2.js"></script><script type="text/javascript" src="main.4c4440865f5831f13b2c.js"></script></body>
 </html>
